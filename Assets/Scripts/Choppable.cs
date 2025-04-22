@@ -44,7 +44,7 @@ public class Choppable : MonoBehaviour
     {
         Debug.Log("Tree chopped!");
         gameObject.SetActive(false);
-        PlayerInventoryManager.Instance.AddItemsToPlayerInventory(1, 3);
+        InventoryManager.Instance.AddItem(ResourceManager.Instance.itemList[0]);
     }
 
     public void SetVisualActive(bool active)

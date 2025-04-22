@@ -41,17 +41,6 @@ public class PlayerInventoryManager : MonoBehaviour
             playerInventory.Add(itemId, quantity); // Add new item if it's not in inventory
         }
 
-        PrintPlayerInventory();
-    }
-
-    void PrintPlayerInventory()
-    {
-        foreach(int key in playerInventory.Keys)
-        {
-            string itemName = ResourceManager.Instance.resourceList[key];
-            int amount = playerInventory[key];
-            Debug.Log($"{itemName}: {amount}");
-        }
     }
 
 }
